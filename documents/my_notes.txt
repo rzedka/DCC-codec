@@ -1,0 +1,17 @@
+processor: Atmega328p 
+Build LOG:
+-------------- Build: Debug in ArdNano_DCC_project_v4 (compiler: GNU GCC Compiler for AVR)---------------
+
+avr-gcc.exe -Wall -mmcu=atmega328p -DF_CPU=16000000UL -g -IC:\WinAVR\avr\include -c dcc.c -o obj\Debug\dcc.o
+dcc.c: In function 'DCC_ENCODER_MainFCN':
+dcc.c:108: warning: implicit declaration of function 'UART_get_flag'
+avr-gcc.exe -Wall -mmcu=atmega328p -DF_CPU=16000000UL -g -IC:\WinAVR\avr\include -c main.c -o obj\Debug\main.o
+main.c: In function '__vector_18':
+main.c:148: warning: passing argument 1 of 'memset' discards qualifiers from pointer target type
+avr-gcc.exe -Wall -mmcu=atmega328p -DF_CPU=16000000UL -g -IC:\WinAVR\avr\include -c uart.c -o obj\Debug\uart.o
+avr-g++.exe -LC:\WinAVR\avr\lib -o bin\Debug\ArdNano_DCC_project_v4.elf obj\Debug\dcc.o obj\Debug\fuse.o obj\Debug\gpio.o obj\Debug\main.o obj\Debug\spi.o obj\Debug\tim.o obj\Debug\uart.o  -mmcu=atmega328p -Wl,-Map=bin\Debug\ArdNano_DCC_project_v4.map,--cref  
+obj\Debug\dcc.o: In function `DCC_ENCODER_MainFCN':
+C:\Users\Radim\Documents\CodeBlocks_projects\ArdNano_DCC_project_v4/dcc.c:108: undefined reference to `UART_get_flag'
+C:\Users\Radim\Documents\CodeBlocks_projects\ArdNano_DCC_project_v4/dcc.c:109: undefined reference to `UART_get_flag'
+Process terminated with status 1 (0 minute(s), 0 second(s))
+2 error(s), 2 warning(s) (0 minute(s), 0 second(s))

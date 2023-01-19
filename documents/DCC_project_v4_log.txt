@@ -1,0 +1,172 @@
+
+30.10.2021 ============================================================
+
+Optron: 6N137 in DIP-8
+
+
+The DDC RX pin : PIND2 configured as external interrupt
+
+Two control GPIO pins: 
+PIND3 | PIND4 
+   0  |   0    Station   dcc_decoder_mode == 0
+   0  |   1    Station   dcc_decoder_mode == 0 (returns "Undefined mode" in console)
+   1  |   0    Station   dcc_decoder_mode == 0 (returns "Undefined mode" in console)  
+   1  |   1    Entrance  dcc_decoder_mode == 1
+
+
+There is a possibility to have four different decoder configurations!! 
+
+============================================================
+============================================================
+
+Function DCC_Address_Recogniton() is designed in the following way:
+
+
+1) The Station configuration (dcc_decoder_mode == 0):
+
+  Addr    railway light
+  
+  104     4-light (ID 0x01) - Green, White, Yellow, Red
+  108     4-light (ID 0x01) - Green, White, Yellow, Red
+  112     4-light (ID 0x01) - Green, White, Yellow, Red
+  116     4-light (ID 0x01) - Green, White, Yellow, Red
+  
+  160     4-light (ID 0x02)
+  224     4-light (ID 0x02)
+  
+  120     3-light (ID 0x03)
+  124	  3-light (ID 0x03)
+  
+  164     2-light (ID 0x04)
+  
+  
+2) The Entrance configuration (dcc_decoder_mode == 1):
+
+  Addr    railway light
+
+  160     2-light (ID 0x11)
+  
+  164     2-light (ID 0x12)
+  
+  81     5-light (ID 0x15)
+  100     5-light (ID 0x15)
+  
+ ============================================================
+ ============================================================
+ The function DCC_LED_Driver() then uses the light ID and received data to control the LEDs in the addressed railway light.
+ 
+ Railway Light ID:  0x01 (4-light) 
+  Data nibble:		action
+  
+        0           All LEDs - OFF
+		1			RED - ON
+		2			GREEN - ON
+		3			YELLOW+GREEN - ON	
+		4			WHITE - ON
+		
+		9			RED - Blink ON
+		10			GREEN - Blink ON
+		11			YELLOW+GREEN - Blink ON	
+		12			WHITE - Blink ON
+		
+	other           undefined action
+
+ Railway Light ID:  0x02 (4-light) 
+  Data nibble:		action
+  
+		0           All LEDs - OFF
+		1			RED - ON
+		2			GREEN - ON
+		3			YELLOW+GREEN - ON	
+		4			WHITE - ON
+		
+		9			RED - Blink ON
+		10			GREEN - Blink ON
+		11			YELLOW+GREEN - Blink ON	
+		12			WHITE - Blink ON
+		
+	other           undefined action
+
+ Railway Light ID:  0x03 (3-light) 
+  Data nibble:		action
+  
+        0           All LEDs - OFF
+		1			RED - ON
+		2			GREEN - ON	
+		3			WHITE - ON
+		
+		9			RED - Blink ON
+		10			GREEN - Blink ON
+		11			WHITE - Blink ON
+		
+	other           undefined action
+	
+ Railway Light ID:  0x04 (2-light) 
+  Data nibble:		action
+  
+        0           All LEDs - OFF
+		1			BLUE - ON
+		2			WHITE - ON	
+
+		
+		9			BLUE - Blink ON
+		10			WHITE - Blink ON
+		
+	other           undefined action	
+	
+ Railway Light ID:  0x11 (2-light) 
+  Data nibble:		action
+  
+        0           All LEDs - OFF
+		1			BLUE - ON
+		2			WHITE - ON	
+
+		
+		9			BLUE - Blink ON
+		10			WHITE - Blink ON
+		
+	other           undefined action		
+
+ Railway Light ID:  0x12 (2-light) 
+  Data nibble:		action
+  
+        0           All LEDs - OFF
+		1			BLUE - ON
+		2			WHITE - ON	
+
+		
+		9			BLUE - Blink ON
+		10			WHITE - Blink ON
+		
+	other           undefined action	
+
+ Railway Light ID:  0x15 (5-light) 
+  Data nibble:		action
+  
+        0           All LEDs - OFF
+		1			RED - ON
+		2			YELLOW 1 - ON and YELLOW 2 - ON	
+		3 			WHITE - ON
+		4			GREEN - ON
+		
+		9			RED - Blink ON
+		10			YELLOW 1 - Blink ON and YELLOW 2 - Blink ON	
+		11 			WHITE - Blink ON
+		12			GREEN - Blink ON
+		
+	other           undefined action	
+
+	
+NOTE: Every incoming command to a certain Railway light resets the previous action, e.g. if the previous action was green blinking, and dat nibbele
+
+
+   Station mode pinout:
+   
+   
+ 
+   
+
+  
+  
+
+

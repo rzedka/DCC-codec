@@ -1,0 +1,70 @@
+# depslib dependency file v1.0
+1594052988 source:c:\users\radim\documents\codeblocks_projects\ardnano_dcc_project_v4\fuse.c
+	<avr/io.h>
+
+1598980513 source:c:\users\radim\documents\codeblocks_projects\ardnano_dcc_project_v4\main.c
+	<avr/io.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<avr/interrupt.h>
+	"main.h"
+	"uart.h"
+	"tim.h"
+	"gpio.h"
+	"dcc.h"
+
+1598980346 c:\users\radim\documents\codeblocks_projects\ardnano_dcc_project_v4\main.h
+
+1598960680 c:\users\radim\documents\codeblocks_projects\ardnano_dcc_project_v4\uart.h
+	<avr/io.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<avr/interrupt.h>
+	"main.h"
+
+1598990600 c:\users\radim\documents\codeblocks_projects\ardnano_dcc_project_v4\tim.h
+	<avr/io.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<avr/interrupt.h>
+	"main.h"
+
+1594054979 c:\users\radim\documents\codeblocks_projects\ardnano_dcc_project_v4\spi.h
+	<avr/io.h>
+	<stdio.h>
+	<stdlib.h>
+
+1598955168 source:c:\users\radim\documents\codeblocks_projects\ardnano_dcc_project_v4\gpio.c
+	"gpio.h"
+
+1598879076 c:\users\radim\documents\codeblocks_projects\ardnano_dcc_project_v4\gpio.h
+	<avr/io.h>
+	<stdio.h>
+	<stdlib.h>
+	"main.h"
+
+1594054249 source:c:\users\radim\documents\codeblocks_projects\ardnano_dcc_project_v4\spi.c
+	"spi.h"
+
+1598955190 source:c:\users\radim\documents\codeblocks_projects\ardnano_dcc_project_v4\tim.c
+	"tim.h"
+
+1598960652 source:c:\users\radim\documents\codeblocks_projects\ardnano_dcc_project_v4\uart.c
+	"uart.h"
+
+1599560097 source:c:\users\radim\documents\codeblocks_projects\ardnano_dcc_project_v4\dcc.c
+	"dcc.h"
+	"uart.h"
+	"tim.h"
+
+1598988602 c:\users\radim\documents\codeblocks_projects\ardnano_dcc_project_v4\dcc.h
+	<avr/io.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<avr/interrupt.h>
+	"main.h"
+

@@ -1,0 +1,95 @@
+
+
+Mode-0 STATION (Both jumpers on GND) ========================================
+
+ADDRESSES: 104, 108, 112, 116
+	0x01 (4-lights)
+					0 - ALL LEDs OFF
+					1 - LED3 (Red)
+					2 - LED0 (Green)
+					3 - LED0 & LED2 (Green & Yellow)
+					4 - LED1 (White)
+					
+					9 - LED3 (Red - blink)
+					10- LED0 (Green - blink)
+					11- LED0 & LED2 (Green & Yellow - blink)
+					12- LED1 (White - blink)
+					
+					led_blink_flag = 0x000F
+					
+ADDRESSES: 160, 224
+	0x02 (4-lights)
+					0 - ALL LEDs OFF
+					1  - LED9 (Red)
+					2  - LED8 (Green)
+					3  - LED6 & LED8 (Yellow & Green)
+					4  - LED7 (White)
+					
+					9  - LED9 (Red - blink)
+					10 - LED8 (Green - blink)
+					11 - LED6 & LED8 (Yellow & Green - blink)
+					12 - LED7 (White - blink)
+					
+					led_blink_flag = 0x03C0
+					
+ADDRESSES: 120, 124
+	0x03 (3-lights)
+					0 - ALL LEDs OFF
+					1 - LED12 (Red)
+					2 - LED11 (Green)
+					3 - LED10 (White)
+					
+					9  - LED12 (Red - blink)
+					10 - LED11 (Green - blink)
+					11 - LED10 (White - blink)
+					
+					led_blink_flag = 0x1C00
+					
+ADDRESSES: 164
+	0x04 (2-lights)
+					0 - ALL LEDs OFF
+					1 - LED5 (Blue)
+					2 - LED4 (White)
+					
+					9 - LED5 (Blue - blink)
+					10 - LED4 (White - blink)
+	
+					led_blink_flag = 0x0030
+
+Mode-1 ENTRANCE (Both jumpers on VCC) =======================================
+
+ADDRESSES: 160
+	0x11 (2-lights)	
+					0 - ALL LEDs OFF
+					1 - LED12 (Blue)
+					2 - LED11 (White)
+					
+					9 - LED12 (Blue - blink)
+					10 - LED11 (White - blink)
+					
+					led_blink_flag = 0x1800
+ADDRESSES: 164
+	0x12 (2-lights)
+					0 - ALL LEDs OFF
+					1  - LED4 (White)
+					2 - LED5 (Blue)
+					
+					9  - LED4 (White - blink)
+					10 - LED5 (Blue - blink)
+					
+					led_blink_flag = 0x0030
+					
+ADDRESSES: 81,100
+	0x15 (5-lights)
+					0 - ALL LEDs OFF
+					1  - LED8 (Red)
+					2  - LED6 & LED10 (Yellow & Yellow)
+					3 - LED9 (White)
+					4 - LED7 (Green)
+					
+					9  - LED8 (Red - blink)
+					10  - LED6 & LED10 (Yellow & Yellow - blink)
+					11 - LED9 (White - blink)
+					12 - LED7 (Green - blink)
+					
+					led_blink_flag = 0x07C0

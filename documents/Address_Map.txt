@@ -1,0 +1,51 @@
+
+
+Mode-0 STATION (Both jumpers on GND) ========================================
+
+ADDRESSES: 104, 108, 112, 116
+	0x01 (4-lights)
+					7 - LED3 (Red - blink)
+					8 - LED3 (Red)
+					9 - LED0 (Green)
+					10 - LED0 & LED2 (Green & Yellow)
+					11 - LED1 (White)
+ADDRESSES: 160, 224
+	0x02 (4-lights)
+					8  - LED9 (Red)
+					9  - LED8 (Green)
+					10 - LED6 & LED8 (Green & Yellow)
+					11 - LED7 (White)
+			
+ADDRESSES: 120, 124
+	0x03 (3-lights)
+					8  - LED12 (Red)
+					9  - LED11 (Green)
+					11 - LED10 (White)
+	
+ADDRESSES: 164
+	0x04 (2-lights)
+					8 - LED5 (Blue)
+					9 - LED4 (White)
+	
+	
+
+
+Mode-1 ENTRANCE (Both jumpers on VCC) =======================================
+
+ADDRESSES: 160
+	0x11 (2-lights)
+					12 - LED12 (Blue)
+					13 - LED11 (White)
+		
+ADDRESSES: 164
+	0x12 (2-lights)
+					9  - LED4 (White)
+					10 - LED5 (Blue)
+
+ADDRESSES: 81,100
+	0x15 (5-lights)
+					8  - LED8 (Red)
+					9  - LED6 & LED10 (Yellow & Yellow)
+					10 - LED9 (White)
+					11 - LED7 (Green)
+	
