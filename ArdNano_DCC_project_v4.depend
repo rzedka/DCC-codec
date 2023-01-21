@@ -68,3 +68,72 @@
 	<avr/interrupt.h>
 	"main.h"
 
+1635625703 source:c:\users\radim\documents\research\milan_jirikovsky\ddc-codec\dcc.c
+	"dcc.h"
+	"uart.h"
+	"tim.h"
+
+1598985002 c:\users\radim\documents\research\milan_jirikovsky\ddc-codec\dcc.h
+	<avr/io.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<avr/interrupt.h>
+	"main.h"
+
+1674308910 c:\users\radim\documents\research\milan_jirikovsky\ddc-codec\main.h
+
+1598957080 c:\users\radim\documents\research\milan_jirikovsky\ddc-codec\uart.h
+	<avr/io.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<avr/interrupt.h>
+	"main.h"
+
+1598987000 c:\users\radim\documents\research\milan_jirikovsky\ddc-codec\tim.h
+	<avr/io.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<avr/interrupt.h>
+	"main.h"
+
+1594049388 source:c:\users\radim\documents\research\milan_jirikovsky\ddc-codec\fuse.c
+	<avr/io.h>
+
+1598951568 source:c:\users\radim\documents\research\milan_jirikovsky\ddc-codec\gpio.c
+	"gpio.h"
+
+1598875476 c:\users\radim\documents\research\milan_jirikovsky\ddc-codec\gpio.h
+	<avr/io.h>
+	<stdio.h>
+	<stdlib.h>
+	"main.h"
+
+1635636662 source:c:\users\radim\documents\research\milan_jirikovsky\ddc-codec\main.c
+	<avr/io.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<avr/interrupt.h>
+	"main.h"
+	"uart.h"
+	"tim.h"
+	"gpio.h"
+	"dcc.h"
+
+1594050649 source:c:\users\radim\documents\research\milan_jirikovsky\ddc-codec\spi.c
+	"spi.h"
+
+1594051379 c:\users\radim\documents\research\milan_jirikovsky\ddc-codec\spi.h
+	<avr/io.h>
+	<stdio.h>
+	<stdlib.h>
+
+1598951590 source:c:\users\radim\documents\research\milan_jirikovsky\ddc-codec\tim.c
+	"tim.h"
+
+1598957052 source:c:\users\radim\documents\research\milan_jirikovsky\ddc-codec\uart.c
+	"uart.h"
+

@@ -14,7 +14,7 @@ PIND3 | PIND4
    1  |   1    Entrance  dcc_decoder_mode == 1
 
 
-There is a possibility to have four different decoder configurations!! 
+There is a possibility to have four different decoder configurations!! Right now we use two.
 
 ============================================================
 ============================================================
@@ -53,7 +53,7 @@ Function DCC_Address_Recogniton() is designed in the following way:
   
  ============================================================
  ============================================================
- The function DCC_LED_Driver() then uses the light ID and received data to control the LEDs in the addressed railway light.
+ The function DCC_LED_Driver() then uses the light ID and the received data to control the LEDs in the addressed railway light.
  
  Railway Light ID:  0x01 (4-light) 
   Data nibble:		action
@@ -157,7 +157,7 @@ Function DCC_Address_Recogniton() is designed in the following way:
 	other           undefined action	
 
 	
-NOTE: Every incoming command to a certain Railway light resets the previous action, e.g. if the previous action was green blinking, and dat nibbele
+NOTE: Every incoming command to a certain Railway light resets the previous action, e.g. if the previous action was green blinking, 
 
 
    Station mode pinout:
