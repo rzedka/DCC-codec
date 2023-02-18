@@ -7,8 +7,8 @@
 #define ARDUINO_NANO
 
 /// Encoder vs Decoder:
-//#define ENCODER
-#define DECODER
+#define ENCODER
+//#define DECODER
 
 /// CPU clock frequency:
 #define F_CPU_16
