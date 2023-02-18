@@ -68,7 +68,7 @@
 <hole x="33.02" y="5.08" drill="3.1"/>
 <text x="17.653" y="4.826" size="1.778" layer="1" font="vector" ratio="12" rot="R90">DCC decoder</text>
 <hole x="33.02" y="50.8" drill="3.1"/>
-<text x="20.955" y="4.953" size="1.778" layer="1" font="vector" ratio="12" rot="R90">v2</text>
+<text x="20.701" y="11.176" size="1.778" layer="1" font="vector" ratio="12" rot="R90">v2</text>
 </plain>
 <libraries>
 <library name="diode" urn="urn:adsk.eagle:library:210">
